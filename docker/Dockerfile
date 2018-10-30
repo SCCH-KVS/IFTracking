@@ -1,8 +1,8 @@
 FROM continuumio/miniconda
 
-ENTRYPOINT ["/bin/bash", "-c" ]
-
 EXPOSE 5000
+
+ENTRYPOINT ["/bin/bash", "-c" ]
 
 RUN apt-get update && apt-get install -y libpq-dev build-essential libgl1-mesa-glx && rm -rf /var/lib/apt/lists/*
 
@@ -19,4 +19,4 @@ RUN [ "/bin/bash", "-c", "source activate py2.7" ]
 # Set working directory
 WORKDIR /if-tracking
 
-#CMD [ "source activate py2.7" ] # && exec python app.py
+CMD [ "source activate py2.7 && exec /bin/bash welcome.sh" ]

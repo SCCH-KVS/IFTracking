@@ -11,9 +11,9 @@ echo ""
 echo "================================================================================"
 echo ""
 
-options=("Preprocess input images" "Detect filaments" "Track filaments" "Overlay filament over the sequence" "Perform all routines" "Exit")
+options=("Process image sequence" "Detect filaments" "Track filaments" "Overlay filaments over the sequence" "Perform all routines" "Exit")
 
-PS3="Please, enter the number of operation: "
+PS3="Please, enter the operation index: "
 
 while true; do
 	echo "The following operations are available:"
