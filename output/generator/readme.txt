@@ -1,0 +1,1 @@
+Folder contains results of filament generation (detection) routine.

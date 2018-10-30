@@ -1,0 +1,1 @@
+Folder contains results of image preprocessing routine.
