@@ -1,9 +1,11 @@
 
-# IFTracking - Intermediate Filament Tracking
+# A Framework for Tracking Intermediate Filaments (IFs)
+
+The software allows to compute the motion of filamentous structures based on 2D confocal fluorescence microscopy data. The software is written in Python and C++ and requires Docker. A few examples are shown below:
 
 <p float="center" align="center">
   <img src="./docs/example4.gif" width="300" height="300" />
-  <img src="./docs/example1.gif" width="480" height="300" /> <br/>
+  <img src="./docs/example1.gif" width="480" height="300" /><br/>
   <img src="./docs/example3.gif" width="300" height="300" />
   <img src="./docs/example2.gif" width="480" height="300" />
 </p>
