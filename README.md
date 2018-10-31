@@ -1,3 +1,4 @@
+
 # IFTracking - Intermediate Filament Tracking
 
 <p float="center">
@@ -31,6 +32,15 @@ docker load /path/to/IFTracking-DockerImage.tar
 
 However, in this case you should run the program using the script `run_docker_alt.sh` (for Linux and Mac) or `run_docker_alt.bat` (for Windows)
 
+## How to work with this software
+
+The software conists of the following components:
+1. Image sequence processing.
+2. Filament detection (generation). 
+3. Filament tracking.
+4. Visualization of the results.
+
+Every component has its own configuration file, which is contained in subfolder `config` of the repository root folder. The most important configuration file is `config/common.config`. It contains the path and the name of image sequence to be processed. More information about configuring the software one can find in the respective configuration file.
 
 ## How to remove the software
 
