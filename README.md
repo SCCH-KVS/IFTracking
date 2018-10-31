@@ -39,10 +39,10 @@ The software conists of the following components:
 
 Every component has its own configuration file, which is contained in subfolder `config` of the repository root folder. The most important configuration file is `config/common.config`. It contains the path and the name of image sequence to be processed. More information about configuring the software one can find in the respective configuration file.
 
-<aside class="notice">
+Tips:
   1. Before running the software, you should share the drive folder in a Settings of Docker (see [here](./docs/docker_1.PNG)).
-  2. Also make sure that Docker has [enough resources](./docs/docker_2.PNG) to run this software (min 4GB memory available). The software tracks filaments in parallel, therefore the more CPUs available for docker the better. You can also specify number of CPUs in configuration file `config/tracker.config`.
-</aside>
+  2. Also make sure that Docker has [enough resources](docs/docker_2.PNG) to run this software (min 4GB memory available). The software tracks filaments in parallel, therefore the more CPUs available for docker the better. You can also specify number of CPUs in configuration file `config/tracker.config`.
+
 
 ## How to remove the software
 
