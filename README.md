@@ -24,7 +24,7 @@ git clone https://github.com/SCCH-KVS/IFTracking.git
 
 Alternatively, you can download Docker image `IFTracking-DockerImage.tar` using this [link](https://1drv.ms/u/s!Aoi3MOXlJd9saoSysaObtFTmrH4) and load it manually as follows:
 ```
-docker load /path/to/IFTracking-DockerImage.tar
+docker load --input /path/to/IFTracking-DockerImage.tar
 ```
 
 However, in this case you should run the program using the script `run_docker_alt.sh` (for Linux and Mac) or `run_docker_alt.bat` (for Windows)
@@ -54,4 +54,4 @@ docker rmi -f if-tracking
 if you have uploaded the Docker-image manually.
 
 ## License
-This software is licensed under the GNU GPL v.3 License - see the [LICENSE.md](LICENSE.md) file for details.
+This software is licensed under the GNU GPL v.3 License - see the [LICENSE](LICENSE) file for details.
