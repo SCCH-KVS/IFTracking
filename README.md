@@ -78,7 +78,7 @@ docker rmi -f if-tracking
 if you have uploaded the Docker-image manually.
 
 ## Acknowledgements
-<img src="./docs/eu.png" align="right" width=152 height=100 />The research received funding from the European Union's Horizon 2020 research and innovation program under the Marie Sklodowska-Curie grant agreement No. 642866. It was supported by the Austrian Ministry for Transport, Innovation and Technology, the Federal Ministry of Science, Research and Economy, and the Province of Upper Austria in the frame of the COMET center SCCH.
+<img src="./docs/eu.png" align="right" width=135 height=100 />The research received funding from the European Union's Horizon 2020 research and innovation program under the Marie Sklodowska-Curie grant agreement No. 642866. It was supported by the Austrian Ministry for Transport, Innovation and Technology, the Federal Ministry of Science, Research and Economy, and the Province of Upper Austria in the frame of the COMET center SCCH.
 
 ## License
 This software is licensed under the GNU GPL v.3 License - see the [LICENSE](LICENSE) file for details.
