@@ -47,13 +47,13 @@ When you run the software, you should be able to see the console interface with 
   <img src="./docs/interface.png" width="700" height="286" />
 </p>
 
-The operations (1) to (4) correspond to the respective modules (mentioned above). Operation (5) consecutively runs operations from (1) to (4). To run operation, just type its number and hit ENTER. Also, please, take into account that each operation depends on the results of its predecessors. For example, the result of (3) won't be successfull if (1) or (2) were not performed.
+The operations (1) to (4) correspond to the respective modules mentioned above. Operation (5) consecutively runs operations from (1) to (4). To run operation, just type its number and hit ENTER. Also, please, take into account that each operation depends on the results of its predecessors. For example, the result of (3) won't be successfull if (1) or (2) were not performed.
 
 Every component has its own configuration file, which is contained in subfolder `config` of the repository root folder. The most important configuration file is `config/common.config`. It contains the path and the name of image sequence to be processed. More information about configuring the software one can find in the respective configuration files.
 
 > **Configure Docker:**
->  1. Before running the software, you should give an access to the drive containing the repository folder. Use __Docker__ > __Settings__ (see [here](./docs/docker_1.PNG)).
->  2. Also make sure that __Docker__ has [enough resources](docs/docker_2.PNG) to run this software (minimum 4GB memory available, however it depends on the size of image sequence). The software tracks filaments in parallel, therefore the more CPUs available for docker the better. You can also specify number of CPUs in configuration file `config/tracker.config`.
+>  1. Before running the software, you should [give access](./docs/docker_1.PNG) to the drive containing the repository folder.
+>  2. Also make sure that __Docker__ has [enough resources](docs/docker_2.PNG) to run this software (it depends on the size of image sequence). The software tracks filaments in parallel, therefore the more available for __Docker__ CPUs the faster it works. You can also specify number of CPUs in the configuration file `config/tracker.config`.
 
 
 ### Data formats
@@ -63,7 +63,7 @@ Every component has its own configuration file, which is contained in subfolder 
 
 ## How to remove the software
 
-Firstly, remove the folder with Git repository. Also remove the respective Docker image using the command:
+Firstly, remove the folder containing the Git repository. Also remove the respective Docker image using the command:
 
 ```
 docker rmi -f dkotsur/incem:if-tracking
@@ -74,6 +74,9 @@ or
 docker rmi -f if-tracking 
 ```
 if you have uploaded the Docker-image manually.
+
+## Acknowledgements
+The research received funding from the European Union's Horizon 2020 research and innovation program under the Marie Sklodowska-Curie grant agreement No. 642866. It was also supported by the Austrian Ministry for Transport, Innovation and Technology, the Federal Ministry of Science, Research and Economy, and the Province of Upper Austria in the frame of the COMET center SCCH.
 
 ## License
 This software is licensed under the GNU GPL v.3 License - see the [LICENSE](LICENSE) file for details.
