@@ -1,7 +1,7 @@
 
-# A Framework for Tracking Intermediate Filaments (IFs)
+# Intermediate Filament Tracking (IFTracking)
 
-The software allows to compute the motion of filamentous structures based on 2D confocal fluorescence microscopy data. The software is written in Python and C++ and requires Docker. A few examples are shown below:
+This software allows you to compute the motion of filamentous structures based on 2D confocal fluorescence microscopy data. It is written in Python, some modules are in C++.
 
 <p float="center" align="center">
   <img src="./docs/example4.gif" width="300" height="300" />
@@ -41,17 +41,25 @@ The software consists of the following components:
 3. __Filament tracking__. Tracks and transfers the filaments from the previous step though the whole image sequence. Alternatively, at this step you can specify filaments from other sources. The results are saved to the folder `output/tracking`.
 4. __Visualization of the results__. Overlays tracked filaments over the image sequence, also produces the legend and the mask, where each filament is enconded by color (grayscale) corresponding to its number. The results are also saved to the folder `output/tracking`.
 
+When you run the software, you should be able to see the console interface with available operations as shown in the figure below:
+
+<p float="center" align="center">
+  <img src="./docs/interface.png" width="700" height="286" />
+</p>
+
+The operations (1) to (4) correspond to the respective modules (mentioned above). Operation (5) consecutively runs operations from (1) to (4). To run operation, just type its number and hit ENTER. Also, please, take into account that each operation depends on the results of its predecessors. For example, the result of (3) won't be successfull if (1) or (2) were not performed.
+
 Every component has its own configuration file, which is contained in subfolder `config` of the repository root folder. The most important configuration file is `config/common.config`. It contains the path and the name of image sequence to be processed. More information about configuring the software one can find in the respective configuration files.
 
-**Some tips:**:
-  1. Before running the software, you should share the drive folder in __Docker__ > __Settings__ (see [here](./docs/docker_1.PNG)).
-  2. Also make sure that __Docker__ has [enough resources](docs/docker_2.PNG) to run this software (minimum 4GB memory available, however it depends on the size of image sequence). The software tracks filaments in parallel, therefore the more CPUs available for docker the better. You can also specify number of CPUs in configuration file `config/tracker.config`.
+> **Configure Docker:**
+>  1. Before running the software, you should give an access to the drive containing the repository folder. Use __Docker__ > __Settings__ (see [here](./docs/docker_1.PNG)).
+>  2. Also make sure that __Docker__ has [enough resources](docs/docker_2.PNG) to run this software (minimum 4GB memory available, however it depends on the size of image sequence). The software tracks filaments in parallel, therefore the more CPUs available for docker the better. You can also specify number of CPUs in configuration file `config/tracker.config`.
 
 
 ### Data formats
 
 1. Input image sequence should be in __TIFF__.
-2. The initial position of filaments (on the first frame of the image sequence) are stored as a __ZIP__ archive. The archive contains __CSV__ files, each corresponds to a filament coordinates (two columns: x, y).
+2. The initial coordinates of filaments (on the first frame of the image sequence) are stored in a __ZIP__ archive. The archive contains one __CSV__ file with two columns (__x__ and __y__) per filament.
 
 ## How to remove the software
 
