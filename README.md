@@ -31,6 +31,8 @@ docker load --input /path/to/IFTracking-DockerImage.tar
 
 However, in this case you should run the program using the script `run_docker_alt.sh` (for Linux and Mac) or `run_docker_alt.bat` (for Windows)
 
+By default this software processes an example image sequence `example/example.tif`.
+
 ## How to work with this software
 
 ### General information
