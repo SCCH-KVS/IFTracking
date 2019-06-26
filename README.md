@@ -1,7 +1,7 @@
 
 # Intermediate Filament Tracking (IFTracking)
 
-This software allows you to compute the motion of filamentous structures based on 2D confocal fluorescence microscopy data. It is written in Python, some modules are in C++.
+This software allows you to track the motion of individual filamentous structures based on 2D confocal fluorescence microscopy data. Programing languages: Python, C++.
 
 <p float="center" align="center">
   <img src="./docs/example4.gif" width="300" height="300" />
@@ -10,6 +10,9 @@ This software allows you to compute the motion of filamentous structures based o
   <img src="./docs/example2.gif" width="480" height="300" />
 </p>
 
+More details about the algorithm:
+
+> Kotsur, D., Yakobenchuk, R., Leube, R. E., Windoffer, R., & Mattes, J. (2019). An Algorithm for Individual Intermediate Filament Tracking. In Processing and Analysis of Biomedical Information (pp. 66–74). Springer International Publishing. https://doi.org/10.1007/978-3-030-13835-6_8
 
 ## How to run this software
 
@@ -78,7 +81,7 @@ docker rmi -f if-tracking
 if you have uploaded the Docker-image manually.
 
 ## Acknowledgements
-<img src="./docs/eu.png" align="right" width=135 height=100 />The research received funding from the European Union's Horizon 2020 research and innovation program under the Marie Sklodowska-Curie grant agreement No. 642866. It was supported by the Austrian Ministry for Transport, Innovation and Technology, the Federal Ministry of Science, Research and Economy, and the Province of Upper Austria in the frame of the COMET center SCCH.
+<img src="./docs/eu.png" align="right" width=135 height=100 />The research received funding from the European Union's Horizon 2020 research and innovation program under the Marie Sklodowska-Curie grant agreement [No. 642866](https://incem.rwth-aachen.de). It was supported by the Austrian Ministry for Transport, Innovation and Technology, the Federal Ministry of Science, Research and Economy, and the Province of Upper Austria in the frame of the COMET center SCCH.
 
 ## License
 This software is licensed under the GNU GPL v.3 License - see the [LICENSE](LICENSE) file for details.
